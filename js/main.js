@@ -43,7 +43,7 @@ function clicked(evt) {
 			}, 3000);
 
 			setTimeout(function() {
-				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the refresh button in the top left corner. Have a great day!";
 			}, 3000);
 
 			setTimeout(function() {
@@ -79,7 +79,7 @@ function clicked(evt) {
 			}, 3000);
 
 			setTimeout(function() {
-				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the refresh button in the top left corner. Have a great day!";
 			}, 3000);
 			
 			setTimeout(function() {
@@ -115,7 +115,7 @@ function clicked(evt) {
 			}, 3000);
 
 			setTimeout(function() {
-				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the refresh button in the top left corner. Have a great day!";
 			}, 3000);
 			
 			setTimeout(function() {
@@ -151,7 +151,7 @@ function clicked(evt) {
 			}, 3000);
 
 			setTimeout(function() {
-				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the refresh button in the top left corner. Have a great day!";
 			}, 3000);
 			
 			setTimeout(function() {
@@ -187,7 +187,7 @@ function clicked(evt) {
 			}, 3000);
 
 			setTimeout(function() {
-				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the refresh button in the top left corner. Have a great day!";
 			}, 3000);
 			
 			setTimeout(function() {
@@ -223,7 +223,7 @@ function clicked(evt) {
 			}, 3000);
 
 			setTimeout(function() {
-				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the refresh button in the top left corner. Have a great day!";
 			}, 3000);
 			
 			setTimeout(function() {
@@ -259,7 +259,7 @@ function clicked(evt) {
 			}, 3000);
 
 			setTimeout(function() {
-				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the refresh button in the top left corner. Have a great day!";
 			}, 3000);
 			
 			setTimeout(function() {
@@ -295,7 +295,7 @@ function clicked(evt) {
 			}, 3000);
 
 			setTimeout(function() {
-				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the refresh button in the top left corner. Have a great day!";
 			}, 3000);
 			
 			setTimeout(function() {
