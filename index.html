@@ -5,6 +5,7 @@
 		<link rel = "stylesheet" type = "text/css" href = "css/main.css">
 	</head>
 	<body>
+		<img src = "images/reset.png" id = "reset" onclick = "window.location.reload()">
 		<div class = "title">Soda Machine</div>
 		<div class = "interaction">
 			<div class = "machine">
@@ -32,7 +33,7 @@
 						<h2 id="screen"></h2>
 					</div>
 					<div class = "insert_money"></div>
-					<div class = "buttons">
+					<div id = "buttons">
 						<img src = "images/sierra_mist_button.png" id = "sierra_mist_button" onclick = "getCost(this)" data-price = "1.00">
 						<img src = "images/dr_pepper_button.png" id = "dr_pepper_button" onclick = "getCost(this)" data-price = "1.25"><br/>
 						<img src = "images/mountain_dew_button.png" id = "mountain_dew_button" onclick = "getCost(this)" data-price = "1.50">
@@ -42,7 +43,9 @@
 						<img src = "images/coca_cola_button.png" id = "coca_cola_button" onclick = "getCost(this)" data-price = "2.50">
 						<img src = "images/sunkist_button.png" id = "sunkist_button" onclick = "getCost(this)" data-price = "2.75">
 					</div>
-					<div class = "change"></div>
+					<div class = "change">
+						<img src = "images/coin_stack.png" id = "pennies">
+					</div>
 				</div>
 			</div>
 			<div class = "payment">

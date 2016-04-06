@@ -16,7 +16,7 @@ body {
 .title {
 	font-family: Balloon XBd BT;
 	font-size: 70pt;
-	margin-top: 50px;
+	margin-top: -50px;
 	text-align: center;
 	margin-bottom: 50px;
 }
@@ -72,6 +72,8 @@ body {
 	margin: 30px;
 	margin-bottom: -7px;
 	margin-top: 25px;
+	transition: 2s ease-in;
+	position: relative;
 }
 
 #sierra_mist_can {
@@ -165,7 +167,7 @@ h2 {
 	margin: 0 auto;
 }
 
-.buttons {
+#buttons {
 	width: 250px;
 	height: 170px;
 	margin-top: 15px;
@@ -190,6 +192,16 @@ h2 {
 	border: 5px solid #333333;
 	background: black;
 	margin: 0 auto;
+	position: relative;
+}
+
+#pennies {
+	width: 118px;
+	height: 128px;
+	margin-top: -40px;
+	margin-left: -5px;
+	opacity: 0;
+	display: block;
 }
 
 .payment {
@@ -238,4 +250,9 @@ button[type=submit] {
 @keyframes fade {
   0% { opacity: 1 }
   100% { opacity: 0 }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
 }

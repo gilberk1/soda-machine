@@ -1,12 +1,311 @@
-var cashAmount;
+var cashAmount, buttons;
+
+var pennies = document.getElementById('pennies');
+
 
 function getCost(price) {
 	if(document.getElementById('choices').innerHTML == "Choose a soda.") {
 		document.getElementById('screen').innerHTML = "VENDING";
+
+		buttons = document.getElementById('buttons');
+
+		buttons.addEventListener("click", clicked, false);
 	}
 	else {
 		var sodaPrice = price.getAttribute('data-price');
 		document.getElementById('screen').innerHTML = '$'+sodaPrice;
+	}
+}
+
+function clicked(evt) {
+	if(evt.target.id == "sierra_mist_button") {
+
+		var sierra_mist_can = document.getElementById('sierra_mist_can');
+		var sierra_mist_button = document.getElementById('sierra_mist_button');
+
+		var change = parseFloat(cashAmount - sierra_mist_button.getAttribute('data-price')).toFixed(2);
+
+		if(change >= 0) {
+			sierra_mist_can.style.transform = "translate(220px, 390px)";
+			sierra_mist_can.style.zIndex = "2000";
+			buttons.style.animation = "fade 2s linear";
+
+			setTimeout(function() {
+				buttons.style.opacity = "0";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.animation = "fadeIn 1s linear";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.opacity = "1";
+			}, 3000);
+
+			setTimeout(function() {
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+			}, 3000);
+
+			setTimeout(function() {
+				document.getElementById('screen').innerHTML = '$'+change;
+				choices.style.display = "block";
+			}, 3000);
+		}
+		else {
+			document.getElementById('screen').innerHTML = 'ERROR';
+		}
+	}
+	else if(evt.target.id == "dr_pepper_button") {
+		var dr_pepper_can = document.getElementById('dr_pepper_can');
+		var dr_pepper_button = document.getElementById('dr_pepper_button');
+		
+		var change = parseFloat(cashAmount - dr_pepper_button.getAttribute('data-price')).toFixed(2);
+
+		if(change >= 0) {
+			dr_pepper_can.style.transform = "translate(75px, 390px)";
+			dr_pepper_can.style.zIndex = "2000";
+			buttons.style.animation = "fade 2s linear";
+
+			setTimeout(function() {
+				buttons.style.opacity = "0";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.animation = "fadeIn 1s linear";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.opacity = "1";
+			}, 3000);
+
+			setTimeout(function() {
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+			}, 3000);
+			
+			setTimeout(function() {
+				document.getElementById('screen').innerHTML = '$'+change;
+				choices.style.display = "block";
+			}, 3000);
+		}
+		else {
+			document.getElementById('screen').innerHTML = 'ERROR';
+		}
+	}
+	else if(evt.target.id == "mountain_dew_button") {
+		var mountain_dew_can = document.getElementById('mountain_dew_can');
+		var mountain_dew_button = document.getElementById('mountain_dew_button');
+
+		var change = parseFloat(cashAmount - mountain_dew_button.getAttribute('data-price')).toFixed(2);
+
+		if(change >= 0){
+			mountain_dew_can.style.transform = "translate(-85px, 390px)";
+			mountain_dew_can.style.zIndex = "2000";
+			buttons.style.animation = "fade 2s linear";
+
+			setTimeout(function() {
+				buttons.style.opacity = "0";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.animation = "fadeIn 1s linear";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.opacity = "1";
+			}, 3000);
+
+			setTimeout(function() {
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+			}, 3000);
+			
+			setTimeout(function() {
+				document.getElementById('screen').innerHTML = '$'+change;
+				choices.style.display = "block";
+			}, 3000);
+		}
+		else {
+			document.getElementById('screen').innerHTML = 'ERROR';
+		}
+	}
+	else if(evt.target.id == "mug_root_beer_button") {
+		var mug_root_beer_can = document.getElementById('mug_root_beer_can');
+		var mug_root_beer_button = document.getElementById('mug_root_beer_button');
+		
+		var change = parseFloat(cashAmount - mug_root_beer_button.getAttribute('data-price')).toFixed(2);
+
+		if(change >= 0) {
+			mug_root_beer_can.style.transform = "translate(-250px, 390px)";
+			mug_root_beer_can.style.zIndex = "2000";
+			buttons.style.animation = "fade 2s linear";
+
+			setTimeout(function() {
+				buttons.style.opacity = "0";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.animation = "fadeIn 1s linear";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.opacity = "1";
+			}, 3000);
+
+			setTimeout(function() {
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+			}, 3000);
+			
+			setTimeout(function() {
+				document.getElementById('screen').innerHTML = '$'+change;
+				choices.style.display = "block";
+			}, 3000);
+		}
+		else {
+			document.getElementById('screen').innerHTML = 'ERROR';
+		}
+	}
+	else if(evt.target.id == "pepsi_button") {
+		var pepsi_can = document.getElementById('pepsi_can');
+		var pepsi_button = document.getElementById('pepsi_button');
+
+		var change = parseFloat(cashAmount - pepsi_button.getAttribute('data-price')).toFixed(2);
+		
+		if(change >= 0) {
+			pepsi_can.style.transform = "translate(220px, 190px)";
+			pepsi_can.style.zIndex = "2000";
+			buttons.style.animation = "fade 2s linear";
+
+			setTimeout(function() {
+				buttons.style.opacity = "0";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.animation = "fadeIn 1s linear";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.opacity = "1";
+			}, 3000);
+
+			setTimeout(function() {
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+			}, 3000);
+			
+			setTimeout(function() {
+				document.getElementById('screen').innerHTML = '$'+change;
+				choices.style.display = "block";
+			}, 3000);
+		}
+		else {
+			document.getElementById('screen').innerHTML = 'ERROR';
+		}
+	}
+	else if(evt.target.id == "sprite_button") {
+		var sprite_can = document.getElementById('sprite_can');
+		var sprite_button = document.getElementById('sprite_button');
+
+		var change = parseFloat(cashAmount - sprite_button.getAttribute('data-price')).toFixed(2);
+
+		if(change >= 0) {
+			sprite_can.style.transform = "translate(75px, 190px)";
+			sprite_can.style.zIndex = "2000";
+			buttons.style.animation = "fade 2s linear";
+
+			setTimeout(function() {
+				buttons.style.opacity = "0";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.animation = "fadeIn 1s linear";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.opacity = "1";
+			}, 3000);
+
+			setTimeout(function() {
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+			}, 3000);
+			
+			setTimeout(function() {
+				document.getElementById('screen').innerHTML = '$'+change;
+				choices.style.display = "block";
+			}, 3000);
+		}
+		else {
+			document.getElementById('screen').innerHTML = 'ERROR';
+		}
+	}
+	else if(evt.target.id == "coca_cola_button") {
+		var coca_cola_can = document.getElementById('coca_cola_can');
+		var coca_cola_button = document.getElementById('coca_cola_button');
+
+		var change = parseFloat(cashAmount - coca_cola_button.getAttribute('data-price')).toFixed(2);
+
+		if(change >= 0) {
+			coca_cola_can.style.transform = "translate(-85px, 190px)";
+			coca_cola_can.style.zIndex = "2000";
+			buttons.style.animation = "fade 2s linear";
+
+			setTimeout(function() {
+				buttons.style.opacity = "0";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.animation = "fadeIn 1s linear";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.opacity = "1";
+			}, 3000);
+
+			setTimeout(function() {
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+			}, 3000);
+			
+			setTimeout(function() {
+				document.getElementById('screen').innerHTML = '$'+change;
+				choices.style.display = "block";
+			}, 3000);
+		}
+		else {
+			document.getElementById('screen').innerHTML = 'ERROR';
+		}
+	}
+	else {
+		var sunkist_can = document.getElementById('sunkist_can');
+		var sunkist_button = document.getElementById('sunkist_button');
+
+		var change = parseFloat(cashAmount - sunkist_button.getAttribute('data-price')).toFixed(2);
+
+		if(change >= 0) {
+			sunkist_can.style.transform = "translate(-250px, 190px)";
+			sunkist_can.style.zIndex = "2000";
+			buttons.style.animation = "fade 2s linear";
+
+			setTimeout(function() {
+				buttons.style.opacity = "0";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.animation = "fadeIn 1s linear";
+			}, 2000);
+
+			setTimeout(function() {
+				pennies.style.opacity = "1";
+			}, 3000);
+
+			setTimeout(function() {
+				document.getElementById('choices').innerHTML = "Your soda and change are there. To get another soda, press the button in the corner. Have a great day!";
+			}, 3000);
+			
+			setTimeout(function() {
+				document.getElementById('screen').innerHTML = '$'+change;
+				choices.style.display = "block";
+			}, 3000);
+		}
+		else {
+			document.getElementById('screen').innerHTML = 'ERROR';
+		}
 	}
 }
 
