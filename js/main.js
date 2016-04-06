@@ -312,7 +312,7 @@ function clicked(evt) {
 function insertCash() {
 	var dollars = document.getElementById('dollars').value;
 	var cents = document.getElementById('cents').value;
-	if(dollars < 100 && cents < 100 && dollars > 0 && cents > 0 && dollars != '' && cents != '')
+	if(dollars < 100 && cents < 100 && dollars > 0 && dollars != '' && cents != '')
 	{
 
 		cashAmount = parseFloat(dollars+'.'+cents).toFixed(2);
