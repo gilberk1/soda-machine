@@ -13,6 +13,10 @@ body {
 	src: url("digital-7.ttf");
 }
 
+#reset:hover {
+	cursor: pointer;
+}
+
 .title {
 	font-family: Balloon XBd BT;
 	font-size: 70pt;
@@ -186,6 +190,17 @@ h2 {
 	margin: 5px;
 }
 
+#sierra_mist_button:hover,
+#dr_pepper_button:hover,
+#mountain_dew_button:hover,
+#mug_root_beer_button:hover,
+#pepsi_button:hover,
+#sprite_button:hover,
+#coca_cola_button:hover,
+#sunkist_button:hover {
+	cursor: pointer;
+}
+
 .change {
 	width: 100px;
 	height: 50px;
@@ -237,6 +252,9 @@ button[type=submit] {
 	font-size: 25pt;
 	width: 250px;
 	height: 50px;
+}
+button[type=submit]:hover {
+	cursor: pointer;
 }
 
 #money {
