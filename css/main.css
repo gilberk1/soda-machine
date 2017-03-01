@@ -18,7 +18,8 @@ body {
 }
 
 .title {
-	font-family: Balloon XBd BT;
+	font-family: "Balloon XBd BT";
+	src: url("balloon-xbd-bt-extra-bold.ttf");
 	font-size: 70pt;
 	margin-top: -50px;
 	text-align: center;
