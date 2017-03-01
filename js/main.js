@@ -2,6 +2,8 @@ var cashAmount, buttons;
 
 var pennies = document.getElementById('pennies');
 
+/* Function vends the soda chosen when clicking one of the buttons
+	or it tells the soda price */
 
 function getCost(price) {
 	if(document.getElementById('choices').innerHTML == "Choose a soda.") {
@@ -17,7 +19,12 @@ function getCost(price) {
 	}
 }
 
+/* Function goes through the animation of vending the soda */
+
 function clicked(evt) {
+
+	/* Vends Sierra Mist */
+
 	if(evt.target.id == "sierra_mist_button") {
 
 		var sierra_mist_can = document.getElementById('sierra_mist_can');
@@ -55,6 +62,9 @@ function clicked(evt) {
 			document.getElementById('screen').innerHTML = 'ERROR';
 		}
 	}
+
+	/* Vends Dr Pepper */
+
 	else if(evt.target.id == "dr_pepper_button") {
 		var dr_pepper_can = document.getElementById('dr_pepper_can');
 		var dr_pepper_button = document.getElementById('dr_pepper_button');
@@ -91,6 +101,9 @@ function clicked(evt) {
 			document.getElementById('screen').innerHTML = 'ERROR';
 		}
 	}
+
+	/* Vends Mountain Dew */
+
 	else if(evt.target.id == "mountain_dew_button") {
 		var mountain_dew_can = document.getElementById('mountain_dew_can');
 		var mountain_dew_button = document.getElementById('mountain_dew_button');
@@ -127,6 +140,9 @@ function clicked(evt) {
 			document.getElementById('screen').innerHTML = 'ERROR';
 		}
 	}
+
+	/* Vends Mug Root Beer */
+
 	else if(evt.target.id == "mug_root_beer_button") {
 		var mug_root_beer_can = document.getElementById('mug_root_beer_can');
 		var mug_root_beer_button = document.getElementById('mug_root_beer_button');
@@ -163,6 +179,9 @@ function clicked(evt) {
 			document.getElementById('screen').innerHTML = 'ERROR';
 		}
 	}
+
+	/* Vends Pepsi */
+
 	else if(evt.target.id == "pepsi_button") {
 		var pepsi_can = document.getElementById('pepsi_can');
 		var pepsi_button = document.getElementById('pepsi_button');
@@ -199,6 +218,9 @@ function clicked(evt) {
 			document.getElementById('screen').innerHTML = 'ERROR';
 		}
 	}
+
+	/* Vends Sprite */
+
 	else if(evt.target.id == "sprite_button") {
 		var sprite_can = document.getElementById('sprite_can');
 		var sprite_button = document.getElementById('sprite_button');
@@ -235,6 +257,9 @@ function clicked(evt) {
 			document.getElementById('screen').innerHTML = 'ERROR';
 		}
 	}
+
+	/* Vends Coca Cola */
+
 	else if(evt.target.id == "coca_cola_button") {
 		var coca_cola_can = document.getElementById('coca_cola_can');
 		var coca_cola_button = document.getElementById('coca_cola_button');
@@ -271,6 +296,9 @@ function clicked(evt) {
 			document.getElementById('screen').innerHTML = 'ERROR';
 		}
 	}
+
+	/* Vends Sunkist */
+
 	else {
 		var sunkist_can = document.getElementById('sunkist_can');
 		var sunkist_button = document.getElementById('sunkist_button');
@@ -308,6 +336,8 @@ function clicked(evt) {
 		}
 	}
 }
+
+/* Function goes through the animation of inserting the cash into the soda machine */
 
 function insertCash() {
 	var dollars = document.getElementById('dollars').value;
